@@ -8,3 +8,11 @@ var a = 1;
     var a = 2;    
 })();
 ```
+
+```javascript
+for (var i = 0; i < 10; i+=1){
+    setTimeout(function(){
+        console.log(i);
+    }, 10);
+}
+```
