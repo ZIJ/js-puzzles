@@ -35,3 +35,16 @@ function clone(obj, props){
     return copy;
 };
 ```
+
+```javascript
+var Foo = function(){
+    console.log(this);   
+}
+Foo.prototype.act = Foo;
+Foo.prototype.exec = function(func){
+    func();
+};
+var obj = new Foo();
+obj.act();
+obj.exec(obj.act);
+```
