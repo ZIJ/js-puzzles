@@ -1,4 +1,10 @@
 js-puzzles
 ==========
 
-Questions on JavaScript core concepts understanding
+```
+var a = 1;
+(function(){
+    console.log(a);
+    var a = 2;    
+})();
+```
