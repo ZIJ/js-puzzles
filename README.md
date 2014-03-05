@@ -23,11 +23,11 @@ var car1 = {
     model: 'a3',
     year: 2010
 };
-var car2 = copy(car1, {
+var car2 = clone(car1, {
     year: 2011
 });
 console.log(car1, car2);
-function copy(obj, props){
+function clone(obj, props){
     var copy = obj;
     for (var key in props) {
         copy[key] = props[key];   
