@@ -48,3 +48,21 @@ var obj = new Foo();
 obj.act();
 obj.exec(obj.act);
 ```
+
+```javascript
+function Provider(options){
+    if (! this instanceof Provider){
+        return new Provider(options); 
+    }
+    this.name = options.name || 'default';
+}
+var prov1 = new Provider({
+   name: 'basic'
+});
+var prov2 = Provider({
+   name: 'advanced'
+});
+console.log(prov1.name);
+console.log(prov2.name);
+```
+
