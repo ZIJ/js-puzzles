@@ -50,6 +50,13 @@ obj.exec(obj.act);
 ```
 
 ```javascript
+var f = function(){
+    console.log(!!this);
+}
+f.call(0);
+```
+
+```javascript
 function Provider(options){
     if (! this instanceof Provider){
         return new Provider(options); 
