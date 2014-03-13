@@ -73,3 +73,7 @@ console.log(prov1.name);
 console.log(prov2.name);
 ```
 
+```javascript
+Boolean.call.bind(String).apply(Number, [1, 2, 3])
+```
+
