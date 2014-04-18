@@ -77,3 +77,9 @@ console.log(prov2.name);
 Boolean.call.bind(String).apply(Number, [1, 2, 3])
 ```
 
+```javascript
+// write the sum function
+console.log(sum(1));                        // 1
+console.log(sum(1)(2));                     // 3
+console.log(sum(1)(2)(3)(-1)(-2)(-3));      // 0
+```
